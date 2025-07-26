@@ -89,6 +89,13 @@ Expand multilingual support with more accurate NLP models
 
 Improve LLM prompt customization for finer control
 
+## 👩‍💻 Contributors
+
+This project was created by:
+
+- [Shravani Bhosale](https://github.com/Shravanimbh)  
+- [Arpita Chavan](https://github.com/Arp518)  
+
 🤝 Contributing
 Contributions, ideas, and feedback are welcome!
 If you'd like to contribute to this project, feel free to fork it, raise issues, or submit pull requests.
