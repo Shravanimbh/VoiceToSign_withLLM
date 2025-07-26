@@ -6,7 +6,7 @@
 🎬 Demo
 🔗DemoVideo
 
-[![Watch the demo](output_images\VoiceToSign_Output2.mp4)]
+[![Watch the demo]([output_images\VoiceToSign_Output2.mp4](https://drive.google.com/file/d/1dL-VIIvBct91wURc94Pjfnr4CsP7kO5g/view?usp=sharing))]
 
 
 ✨ Key Features
