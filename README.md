@@ -8,6 +8,12 @@
 
 [![Watch the demo]((https://drive.google.com/file/d/1dL-VIIvBct91wURc94Pjfnr4CsP7kO5g/view?usp=sharing)]
 
+## 📊 Dataset
+
+We used datasets from the following repository:
+
+- [Dataset Repo Name](https://github.com/HetRojivadiya/SignLanguage-Detection-And-Voice-To-Sign-Prediction/tree/master)  
+  Credits to the original authors for providing the dataset used in training and testing.
 
 ✨ Key Features
 🎤 Voice Recognition
