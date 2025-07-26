@@ -1,21 +1,94 @@
-<h1 align="center" id="title">SignLangify</h1>
+🗣️ Voice-to-Sign Language (ISL) Translator Using LLM
+<p align="center"> <img src="output_images/VoiceToSign_Output1.JPG" alt="Voice-to-Sign Translator Demo" width="800"/> </p> <div align="center">
+🌟 A Python-powered application that converts spoken language into Indian Sign Language (ISL) using animated sign GIFs or fallback alphabet images. With optional Local LLM (LLaMA via Ollama) integration, complex spoken phrases are simplified for accurate and meaningful translation.
 
-<p align="center"><img src="https://socialify.git.ci/HetRojivadiya/SignLanguage-Detection-And-Voice-To-Sign-Prediction/image?language=1&amp;owner=1&amp;name=1&amp;stargazers=1&amp;theme=Light" alt="project-image"></p>
+</div>
+🎬 Demo
+🔗DemoVideo
 
-<p id="description">🌟 Introducing a groundbreaking project SignLangify Developed by Me and My Friend Vatsal Panchani ! This innovative endeavor revolutionizes communication for the hearing-impaired community with not just one but two pioneering features. 👋 Firstly SignLangify utilizes cutting-edge technology for real-time sign language detection seamlessly translating intricate hand movements into clear and meaningful messages. 🗣️ Secondly breaking barriers further it introduces a Voice-to-Sign feature effortlessly converting spoken words into precise sign language gestures. 💻 Powered by Python and leveraging the sophisticated RandomForestClassifier model. It's not just a project; it's a testament to the transformative potential of technology in fostering inclusivity and empowerment. Get ready to witness the future of communication one sign at a time with SignLangify! Project Report : https://lnkd.in/dUSvP79F</p>
+[![Watch the demo](output_images\VoiceToSign_Output2.mp4)]
 
-<h2>🚀 Demo</h2>
 
-[https://www.linkedin.com/feed/update/urn:li:activity:7189162704421470209/](https://www.linkedin.com/feed/update/urn:li:activity:7189162704421470209/)
+✨ Key Features
+🎤 Voice Recognition
+Real-time speech input using your microphone.
 
-<h2>Project Screenshots:</h2>
+🌍 Multilingual Translation
+Any language input is auto-translated to English before being processed.
 
-<img src="https://drive.google.com/uc?export=view&id=1B6c91q8DASx8Nqbq79_SW8oYoMI1xNdf" alt="project-screenshot" width="800" height="400/"><br/>
-<img src="https://drive.google.com/uc?export=view&id=1bjHZtvVTTQorznAtl--PCg3PJ5kQaYO9" alt="project-screenshot" width="800" height="400/"><br/>
-<img src="https://drive.google.com/uc?export=view&id=1hF-D7d6wc8pMzk2hLe7QQWD6o_U4K1wA" alt="project-screenshot" width="700" height="400/"><br/>
-<img src="https://drive.google.com/uc?export=view&id=1txy5NIxBvbzES_kJTpeBGHw9cUWsl-kJ" alt="project-screenshot" width="800" height="400/"><br/>
-<img src="https://drive.google.com/uc?export=view&id=1k0CY5xZ6fF3vs2vJ3ngrH5ZUiBLUIak7" alt="project-screenshot" width="800" height="400/"><br/>
-<img src="https://drive.google.com/uc?export=view&id=18PhHK9UXAxG5sTziZr5zjZ10ihnmhndI" alt="project-screenshot" width="800" height="400/"><br/>
+🧠 LLM Integration (Optional)
+Uses LLaMA via Ollama to simplify long or polite phrases for accurate ISL translation.
 
-![alt text](https://drive.google.com/uc?export=view&id=1hF-D7d6wc8pMzk2hLe7QQWD6o_U4K1wA)
+🖼️ Sign Display System
+Translates directly into ISL using:
 
+Phrase-based GIFs (e.g., good morning.gif)
+
+Fallback character-by-character A–Z signs when phrase GIFs are unavailable.
+
+🖥️ User-Friendly GUI
+Built with Tkinter for a smooth desktop experience.
+
+📁 Offline Capable
+All GIFs and image assets are stored locally for usage without internet access.
+
+📸 Screenshots
+<p align="center"> <img src="output_images/VoiceToSign_Output1.JPG" width="700" /> <br><br> <img src="output_images/VoiceToSign_Output3.JPG" width="700" /> </p>
+🔧 Tech Stack
+Category	Tools Used
+Language	Python
+Voice Recognition	SpeechRecognition, PyAudio
+GUI	Tkinter
+Image/GIF Handling	PIL (Pillow), ImageTk, ImageSequence
+LLM (Optional)	LLaMA 3 via Ollama
+Phrase Assets	Local ISL phrase GIFs (ISL_Gifs/)
+Fallback Mode	A–Z alphabet images (letters/ folder)
+
+⚙️ Getting Started
+1. Clone the Repository
+bash
+Copy
+Edit
+git clone https://github.com/Shravanimbh/Voice-To-Sign-ISL-with-LLM.git
+cd Voice-To-Sign-ISL-with-LLM
+2. Install Dependencies
+Make sure you have Python 3.8+ installed, then run:
+
+bash
+Copy
+Edit
+pip install -r requirements.txt
+3. Run the Application
+bash
+Copy
+Edit
+python main.py
+🔁 Ensure your microphone is working and assets like ISL_Gifs and letters folders are correctly placed.
+
+💡 How It Works
+User speaks into the microphone 🎙️
+
+Speech is transcribed to text using Google's Speech Recognition API
+
+Text is translated to English, if not already
+
+LLM simplifies complex phrases (optional)
+
+Simplified phrase is matched to available sign GIFs
+
+If no exact match: fallback to alphabet signs
+
+Animated signs are displayed in the GUI 🧏‍♂️✨
+
+🧠 Future Enhancements
+Add full ISL dictionary support
+
+Support live webcam gesture input (Sign-to-Voice)
+
+Expand multilingual support with more accurate NLP models
+
+Improve LLM prompt customization for finer control
+
+🤝 Contributing
+Contributions, ideas, and feedback are welcome!
+If you'd like to contribute to this project, feel free to fork it, raise issues, or submit pull requests.
